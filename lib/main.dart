@@ -9,15 +9,34 @@ void main() {
         children: [
           Text(
             "Pessoas: 0",
-            style: TextStyle(color: Colors.white,
-                fontWeight: FontWeight.bold),
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              FlatButton(
+                child: Text(
+                  "+1",
+                  style: TextStyle(fontSize: 40.0, color: Colors.white),
+                ),
+                onPressed: () {},
+              ),
+              FlatButton(
+                child: Text(
+                  "-1",
+                  style: TextStyle(fontSize: 40.0, color: Colors.white),
+                ),
+                onPressed: () {},
+              ),
+            ],
+          ),
+
           Text(
             "Pode entrar!",
-            style: TextStyle(color: Colors.white,
+            style: TextStyle(
+                color: Colors.white,
                 fontStyle: FontStyle.italic,
-                fontSize: 30.0
-            ),
+                fontSize: 30.0),
           ),
         ],
       )));
